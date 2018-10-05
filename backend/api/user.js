@@ -1,14 +1,14 @@
 const bcrypt = require('bcrypt-nodejs');
 
 module.exports = app => {
-    const {existsOrError,notExistsOrError,equalsOrError} = app.api.validation;
+    const { existsOrError, notExistsOrError, equalsOrError } = app.api;
 
     const encryptPassword = password => {
         const salt = bcrypt.genSaltSync(10);
         return bcrypt.hashSync(password,salt);
     };
 
-    const save = (req, res) => {
+    const save = async (req, res) => {
         const user = { ...req.body };
         if (req.params.id) user.id = req.params.id;
 
@@ -29,6 +29,8 @@ module.exports = app => {
         };
         user.password = encryptPassword(user.password);
         delete user.confirmPassword;
+        // o mesmo método será utilizado para
+        // inserir
         if (user.id){
             app.db('users')
                 .update(user)
@@ -36,6 +38,7 @@ module.exports = app => {
                 .then(_ => res.status(204).send())
                 .catch(err => res.status(500).send(err));
         }
+        // e para alterar
         else {
             app.db('users')
                 .insert(user)
