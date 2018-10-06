@@ -54,5 +54,14 @@ const get = (req, res) => {
         .catch(err => res.status(500).send(err));
 }
 
-    return { save, get };
+const getById = (req, res) => {
+    app.db('users')
+        .select('id','name','email','admin')
+        .where({ id: req.params.id })
+        .first()
+        .then(users => res.json(users))
+        .catch(err => res.status(500).send(err));
+}
+
+    return { save, get, getById };
 }

@@ -1,0 +1,72 @@
+[
+    {
+		"name": "Railson Ramés",
+		"email": "railson.rames@gmail.com",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": true
+	},
+	{
+		"name": "Rayanne de Brito",
+		"email": "ryuchoa@hotmail.com",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+	{
+		"name": "Freddie Mercury", 
+		"email": "bohemian@rhapsody.org",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+	{
+		"name": "Flash Gordom", 
+		"email": "flash@gordom.us",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+	{
+		"name": "Lenny Kravitz", 
+		"email": "lenny@iscreviz.com.br",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+	{
+		"name": "Roberto Carlos", 
+		"email": "rei@musica.br",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+	{
+		"name": "Axl Rose", 
+		"email": "guns@in.roses.rocks",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+    },
+    {
+		"name": "Abelinha Show", 
+		"email": "abelinha@honey.pot",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+    },
+    {
+		"name": "Fábio Jr.", 
+		"email": "fabio@jr.br",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	},
+    {
+		"name": "Tony Stark", 
+		"email": "ironman@army.us",
+		"password": "123456",
+		"confirmPassword": "123456",
+		"admin": false
+	}
+]
